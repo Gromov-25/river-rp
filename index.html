@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RIVER RP — Форум</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">
+    <div class="wrap top-inner">
+      <a class="brand" href="#"><span class="brand-mark">R</span><span>RIVER <b>RP</b><small>ROLE PLAY COMMUNITY</small></span></a>
+      <div class="top-actions"><button class="link-btn" id="loginOpen">Увійти</button><button class="primary small" id="registerOpen">Реєстрація</button></div>
+    </div>
+  </div>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div><div class="eyebrow">ІГРОВА СПІЛЬНОТА</div><h1>Форум <span>RIVER RP</span></h1><p>Головне місце для спілкування, новин та підтримки гравців.</p></div>
+      <div class="hero-art"><div class="art-ring"></div><div class="art-letter">R</div><div class="art-caption">YOUR STORY<br>STARTS HERE</div></div>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="active" href="#">Головна</a><a href="#sections">Форум</a><a href="#news">Новини</a><a href="#help">Допомога</a>
+      <div class="nav-spacer"></div><label class="search"><span>⌕</span><input id="searchInput" placeholder="Пошук на форумі..."></label>
+    </div>
+  </nav>
+  <main class="wrap layout">
+    <section class="main-column">
+      <div class="welcome panel">
+        <div><div class="eyebrow">ЛАСКАВО ПРОСИМО</div><h2>Вітаємо на форумі RIVER RP!</h2><p>Обговорюй гру, став запитання, ділися ідеями та знаходь однодумців.</p></div>
+        <button class="primary" id="newTopicTop">Створити тему <span>＋</span></button>
+      </div>
+      <div class="section-heading" id="sections"><h2>Форум</h2><span>ОСНОВНІ РОЗДІЛИ СПІЛЬНОТИ</span></div>
+      <div id="forumSections"></div>
+      <div class="section-heading" id="news"><h2>Останні обговорення</h2><span>СВІЖІ ТЕМИ СПІЛЬНОТИ</span></div>
+      <div class="topic-list panel" id="topicList"></div>
+    </section>
+    <aside class="side-column">
+      <div class="panel stats"><h3>Статистика форуму</h3><div class="stat-grid"><div><b id="statTopics">0</b><span>Тем</span></div><div><b id="statPosts">0</b><span>Повідомлень</span></div><div><b id="statMembers">1</b><span>Учасників*</span></div></div><small>*Демо-режим у вашому браузері</small></div>
+      <div class="panel online"><h3>Інформація</h3><div class="online-line"><i></i><span>Форум працює в локальному демо-режимі</span></div><p>Створені теми зберігаються в цьому браузері на цьому пристрої.</p></div>
+      <div class="panel rules" id="help"><h3>Швидкі посилання</h3><a href="#news">Останні теми <span>→</span></a><a href="#sections">Розділи форуму <span>→</span></a><a href="#" id="aboutLink">Про проєкт <span>→</span></a></div>
+    </aside>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">R</span><span>RIVER <b>RP</b><small>ROLE PLAY COMMUNITY</small></span></a><span>© 2026 RIVER RP. Неофіційний фан-проєкт.</span></div></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Закрити">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

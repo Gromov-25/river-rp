@@ -1,3 +1,4 @@
+
 const SUPABASE_URL = "https://muywxdvpszwedfbfpvli.supabase.co";
 const SUPABASE_KEY = "sb_publishable_kJ4B30MG-o5U3sdwAF4IQg_RfJTE7Av";
 
@@ -118,8 +119,8 @@ async function loadTopics() {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.error(error);
-    toast("Не вдалося завантажити теми.");
+    console.error("SUPABASE ERROR:", error);
+    toast("Помилка: " + error.message);
     return;
   }
 
